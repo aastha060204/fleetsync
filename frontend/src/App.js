@@ -4,6 +4,11 @@ import RealTimeTracking from './pages/RealTimeTracking';
 import AnalyticsAndReports from './pages/AnalyticsReports';
 import MaintenanceManagement from './pages/MaintenanceManagement';
 import RouteOptimization from './pages/RouteOptimization';
+import SignInPage from './pages/SignInPage';
+import SignUpPage from './pages/SignUpPage';
+
+
+// import AuthPage from './pages/AuthPage';
 
 function App() {
   return (
@@ -14,6 +19,13 @@ function App() {
         <Route path="/analytics-and-reports" element={<AnalyticsAndReports />} />
         <Route path="/maintenance-management" element={<MaintenanceManagement />} />
         <Route path="/route-optimization" element={<RouteOptimization />} />
+        {/* <Route path="/login" element={<AuthPage />} /> */}
+        <Route path="/login" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+
+        
+        
+
       </Routes>
     </Router>
   );
